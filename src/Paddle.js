@@ -1,6 +1,6 @@
 import { Component } from "react"
 import React from 'react'
-import p5 from 'p5'
+import Ball from './Ball'
 
 class Paddle extends Component{
     constructor(props) {
@@ -35,7 +35,8 @@ class Paddle extends Component{
     render (){
       return (
         <div className='container'>
-          <div id='paddle' tabIndex={-1} style={{bottom: 0, left: '400px'}} onKeyDown={(e) => this.handleKeyDown(e)}></div>
+          <Ball />
+          <div id='paddle' tabIndex={-1} style={{bottom: 0, left: '400px', border: '2px', borderRadius: '5px'}} onKeyDown={(e) => this.handleKeyDown(e)}></div>
         </div>
       )
     }
