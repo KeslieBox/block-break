@@ -32,6 +32,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
+  background: antiquewhite;
   /* background: repeating-radial-gradient(#1abdc7, #15a67e3d 23px); */
   /* box-shadow: 0 -2px 369px rgb(42 241 248); */
 }

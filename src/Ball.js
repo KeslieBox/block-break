@@ -3,11 +3,11 @@ import React from 'react'
 function Ball(props){
 
     function handleKeyDown(e) {
-      
+    //   keydown event where ball drops into the game
     }
 
-    function dropBall(e){
-     
+    function moveBall(e){
+    //  function to make the ball move based on what it hits etc
     }
 
     return (

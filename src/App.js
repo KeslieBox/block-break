@@ -8,6 +8,8 @@ function App() {
     <>
     <div className="App">
       {/* <Sketch /> */}
+      {/* I think bricks will be the parent component with paddle child and then ball child of paddle */}
+      {/* <Bricks /> */}
       <Paddle />
     </div>
     </>
