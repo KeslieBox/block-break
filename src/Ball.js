@@ -12,9 +12,11 @@ function Ball(props){
 
     return (
     <div className='container'>
-        <div id='ball' tabIndex={-1} style={{bottom: '100px', left: '300px', borderRadius: '20px'}} onKeyDown={(e) => handleKeyDown(e)}></div>
+        <ball id='ball' tabIndex={-1} style={{bottom: '100px', left: '300px', borderRadius: '20px'}} onKeyDown={(e) => handleKeyDown(e)}></ball>
     </div>
     )
   }
 
   export default Ball
+
+  

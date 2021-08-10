@@ -34,10 +34,12 @@ class Paddle extends Component{
 
     render (){
       return (
-        <div className='container'>
+        <>
+        {/* // <div className='container'> */}
           <Ball />
           <div id='paddle' tabIndex={-1} style={{bottom: 0, left: '400px', border: '2px', borderRadius: '5px'}} onKeyDown={(e) => this.handleKeyDown(e)}></div>
-        </div>
+        {/* // </div> */}
+        </>
       )
     }
   }
