@@ -9,6 +9,7 @@ body {
   /* background: repeating-radial-gradient(#32acb0, transparent 23px); */
   display: grid;
   place-items: center;
+  /* background-image: url('https://images.unsplash.com/photo-1618488629391-e7d08445272b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); */
 }
 
 html {
@@ -45,6 +46,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
+  margin-top: -484px;
   /* background: antiquewhite; */
   /* background: repeating-radial-gradient(#1abdc7, #15a67e3d 23px); */
   /* box-shadow: 0 -2px 369px rgb(42 241 248); */
@@ -65,18 +67,70 @@ html {
   /* position: absolute; */
 }
 
+#dungeon {
+  /* margin-top: -261px; */
+  z-index: -2;
+  position: absolute
+}
+
+#brick-wall {
+  z-index: 0;
+  border: black;
+  position: relative;
+  width: 455px;
+  margin-top: 249px;
+  height: 377px;
+  margin-left: 316px;
+}
+
+/* .square {
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.square:active {
+  transform: scale(.97);
+  transition: transform .2s;
+}
+
+.square.flip {
+  transform: rotateY(180deg);
+} */
+
 #square {
-  width: 40px;
-  height: 40px;
-  background: darkcyan;
+  width: 36px;
+  height: 22.5px;
+  background: #ad8b6aba;  
+  border: 1px solid #fdcdff;
+}
+
+#sqImage {
+  width: 36px;
+  height: 22.5px;
+  background: #ad796af7;
+  border: 1px solid #fdcdff;
 }
 
 #bomb {
-  width: 40px;
-  height: 40px;
-  background: darkcyan;
+  width: 36px;
+  height: 22.5px;
+  background: #ad796ac9;
+  /* border: 1px solid #fdcdff; */
 }
 
 .board-row {
-  width:200px;
+  width: 80px;
+  margin-top: 106px;
+  place-items: center;
+  margin-left: 34%;
+  margin-right: -35%;
+}
+
+button {
+  border: 1px solid black;
+}
+
+#explosion{
+  position: absolute;
 }
