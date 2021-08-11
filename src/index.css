@@ -68,19 +68,23 @@ html {
 }
 
 #dungeon {
-  /* margin-top: -261px; */
   z-index: -2;
-  position: absolute
+  position: absolute;
+  width: 1700px;
+  height: 825px;
+  margin-left: -349px;
+  filter: brightness(0.7);
 }
 
 #brick-wall {
-  z-index: 0;
-  border: black;
+  z-index: -2.9;
   position: relative;
-  width: 455px;
-  margin-top: 249px;
-  height: 377px;
-  margin-left: 316px;
+  width: 729px;
+  margin-top: 301px;
+  height: 432px;
+  margin-left: 167px;
+  opacity: .5;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 /* .square {
@@ -99,38 +103,81 @@ html {
 } */
 
 #square {
-  width: 36px;
-  height: 22.5px;
-  background: #ad8b6aba;  
+  width: 60px;
+  height: 25.5px;
+  background: #86472454;
   border: 1px solid #fdcdff;
 }
 
 #sqImage {
-  width: 36px;
-  height: 22.5px;
+  width: 60px;
+  height: 25.5px;
   background: #ad796af7;
   border: 1px solid #fdcdff;
 }
 
 #bomb {
-  width: 36px;
-  height: 22.5px;
-  background: #ad796ac9;
-  /* border: 1px solid #fdcdff; */
+  width: 60px;
+  height: 25.5px;
+  background: #3e090957;
+  border: 1px solid #fdcdff;
 }
 
 .board-row {
-  width: 80px;
-  margin-top: 106px;
+  width: 131px;
+  margin-top: 52px;
   place-items: center;
-  margin-left: 34%;
-  margin-right: -35%;
+  margin-left: 17%;
+  margin-right: -18%;
 }
 
 button {
   border: 1px solid black;
 }
 
-#explosion{
+#explosion {
   position: absolute;
+  width: 1700px;
+  height: 830px;
+  margin-top: -31%;
+  margin-left: -77%;
+}
+
+#game-over {
+  position: absolute;
+  color: #0179cd;
+  z-index: 3;
+  font-size: 22px;
+  font-family: monospace;
+  text-align: center;
+  background-color: #e3e2e5;
+  opacity: .7;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 34px;
+  padding-bottom: 46px;
+  border: 39px solid #1b222e;
+  margin-top: -37px;
+  margin-left: -156px;
+  margin-right: 226px;
+}
+
+#regeneration-island-btn {
+  position: absolute;
+  z-index: 1;
+  margin-top: 26%;
+  font-size: 22px;
+  /* font-style: revert; */
+  font-family: monospace;
+  text-align: center;
+  background-color: #e3e2e5;
+  opacity: .7;
+  border: 16px solid #1b222e;
+  color: #0179cd;
+  padding-right: 17px;
+  padding-left: 17px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-left: -156px;
+  margin-right: 226px;
 }

@@ -34,7 +34,7 @@ function Board (){
     //     return rows;
     // }
 
-    generateBoard(28,6)
+    generateBoard(30,6)
 
     return (
         <>

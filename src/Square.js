@@ -1,5 +1,6 @@
 import {React, useState} from 'react'
 import styled from 'styled-components';
+import ReactCSSTransitionGroup from 'react-transition-group'
 import Logo from './logo.svg'
 import Bomb from './Bomb'
 
@@ -24,13 +25,12 @@ function Square(props) {
         // change brick to some other thing, maybe numbers of bombs it is touching, turn red if it is next to bomb
         } else {
             debugger
-            if (status === 'bombAdjacent'){
-                e.target.style.backgroundColor = 'red'
-            }
+            status === 'bombAdjacent' ? e.target.style.backgroundColor = 'red' : e.target.style.backgroundColor = 'blue'
         }
     }
     
     if(bomb === true){
+        debugger
         return <Bomb/>
     } else {
         return (
